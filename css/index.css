@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,500,600,700,800|Nunito:300,300i,400,400i,600,600i,700,700i');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul{
+  list-style: none;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+.center{
+  display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.base1{
+    height: 600px;
+    width: 280px;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    margin-bottom: 20px;
+    border: solid 8px black;
+    z-index: -3;
+    border-radius: 15px;
+}
+.camerabump{
+  margin-top: 2px;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  z-index: 2;
+}
+
+/* Navigation */
+.navigation{
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.navul{
+  float: left;
+  display: flex;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.navver{
+  font-size: 30px;
+  color: gray;
+  position: relative;
+  vertical-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.lister{
+  position: absolute;
+  left: 35px;
+}
+.back{
+  position: absolute;
+  right: 35px;
+}
+/* Notification */
+.noti{
+  position: absolute;
+  top:0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.time{
+  position: absolute;
+  left: 5px;
+  font-size: 15px;
+}
+.notif{
+  position: absolute;
+  left: 45px;
+  font-size: 15px;
+}
+.insta{
+  position: absolute;
+  left: 65px;
+  font-size: 14px;
+}
+.wifi{
+  position: absolute;
+  right: 45px;
+}
+.network{
+  position: absolute;
+  right: 25px;
+}
+.battery{
+  position: absolute;
+  right: 5px;
+}
+/* APPLICATIONS */
+.apps{
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  z-index: -1;
+}
+.appul{
+  display: flex;
+  float: left;
+  width: 100%;
+  padding-left: 0;
+}
+.appli{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.app{
+  border-radius: 50%;
+}
+
+#test{
+  position: absolute;
+  left: 20%;
+  top: 50px;
+  background-color: red;
+  display: none;
+}
+.dn{
+  height: 45px;
+  width: 45px;
+}
+
+
+/* BROWSER */
+.browser{
+  width: 100%;
+  height: 540px;
+  background-color: #fff;
+  z-index: 99;
+  display: none;
+}
+.search1{
+  position: absolute;
+  width: 85%;
+  left: 3px;
+  top: 30px;
+  border: solid 2px grey;
+  border-radius: 10px;
+}
+.button1{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+}
+.mainsearch{
+position: relative;
+top: 100px;
+}
+.search2{
+  position: absolute;
+  top: 80px;
+  border: solid 2px grey;
+  border-radius: 10px;
+  height: 35px;
+  width: 90%;
+}
+.button2{
+  position: absolute;
+  top: 125px;
+  width: 50%;
+  height: 30px;
+  background-color: darkblue;
+  color: white;
+  border:solid 1px grey;
+  border-radius: 5px;
+
+}
+
+/* camera */
+.camera{
+width: 100%;
+height: 540px;
+background-color: #fff;
+z-index: 99;
+display: none;
+}
+
+/* MUSICPLAYER */
+
+.play{
+  width: 100%;
+  height: 540px;
+  background-color: rgb(253, 169, 169);
+  z-index: 999;
+  display: none;
+}
+audio{
+  width:250px;
+  height: 50px;
+  position: absolute;
+  background-color:  linear-gradient(to bottom ,red, red);;
+  ;
+  top: 30px;
+  left: 7px;
+}
+.player{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: 40px;
+  background-color: rgb(253, 169, 169);
+}
+audio::-webkit-media-controls-panel{
+  background-image: linear-gradient(to right, rgb(252, 104, 104), rgb(157, 157, 255));
+  height: 25px;
+  top: 50px; 
+}
+audio::-webkit-media-controls-time-remaining-display{
+  display: none;
+}
+audio::-webkit-media-controls-fullscreen-button{
+  display: none;
+}
+.sngname{
+  position: relative;
+  top: 55px;
+  font-family: nunito;
+  font-style: italic;
+}
+.second{
+  top:120px ;
+}
+.two{
+  top: 200px;
+}
+.three{
+  top: 280px;
+}
+.four{
+  top: 360px;
+}
+.five{
+  top: 440px;
+}
+
+   ::-webkit-scrollbar{
+     width: 13px;
+   }
+   ::-webkit-scrollbar-track{
+    background: #f1f1f1;
+   }
+   ::-webkit-scrollbar-thumb{
+     background-color:#c1c1c1;
+    padding: 3px;
+   }
+   
+   
+   
+   
